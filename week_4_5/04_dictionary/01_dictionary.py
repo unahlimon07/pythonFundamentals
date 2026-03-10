@@ -2,40 +2,46 @@
 #it is unordered and cannot be sorted
 #it is a key - value pair, key is always a string
 #[1]
+print('\n\n')
+print('-----------------[1 basic printing]------------------')
 dictionary1 = {'key1':'value1','key2':'value2'}
+print(dictionary1)
+print(dictionary1['key1']) #accessing value using key
+print('\n\n')
+
+print('-----------------[2 basic]------------------')
 dictionary2 = {'kaleb':26,'Sam':20}
-dictionary3 = {'Apple':25,'Orange':15, 'Banana':10}
-dictionary4 = {'k1': 23, 'k2':[1,2,3], 'k3':{'secondlayer':{'thirdlayer':100}}}
-dictionary5 = {'key':['a', 'b', 'c']}
-
-print('-----------------[1]------------------')
-print(dictionary2['kaleb']) #prints 26
-print(dictionary3['Banana'])
-print(dictionary4.keys())
-print(dictionary4['k3'])
-print(dictionary4['k3'])
-print(dictionary4['k3']['secondlayer'])
-print(dictionary4['k3']['secondlayer']['thirdlayer'])
-print(dictionary5['key'][0].upper())
-print(dictionary5)
-# adding new pair to a dictionary
-dictionary1['key3'] = 'value3'
-print(dictionary1['key3'])
-
-#[2]reassigning values
-print('-----------------[2]------------------')
-dictionary5['key'][0] = dictionary5['key'][0].upper()
-print(dictionary5)
-dictionary2['kaleb'] = 27
 print(dictionary2)
-dictionary2['kaleb'] = 'string1'
-print(dictionary2)
+print(dictionary2['kaleb'])
 
-#[3]printing keys and values
-print('-----------------[3]------------------')
-print(dictionary3.keys())
-print(dictionary3.values())
-print(dictionary3.items()) # returns a tuple
+print('\n\n')
+
+print('-----------------[3 for loop]------------------')
+dictionary2 = {
+    'kaleb':26,
+    'Sam':20,
+    'John':30,
+    'Mary':25
+}
+
+for key in dictionary2:
+    print(f'{key} {dictionary2[key]}') #prints keys only
 
 
+print('\n\n')
 
+print('-----------------[4 adding pair]------------------')
+dictionary2['Jane'] = 22 #adding a pair to the dictionary
+for key in dictionary2:
+    print(f'{key} {dictionary2[key]}') #prints keys only
+
+
+print('\n\n')
+
+print('-----------------[5 key uniqueness]------------------')
+dictionary2['Jane'] = 29 #if we add a pair with the same key, it will update the value of that key but not add a new pair
+for key in dictionary2:
+    print(f'{key} {dictionary2[key]}') #prints keys only
+
+
+print('\n\n')

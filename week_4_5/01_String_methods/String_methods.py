@@ -222,8 +222,8 @@ print(message.strip())
 #[17] translate() 
 print('-----------------[17 - translate() ]------------------')
 txt = "Good night Sam!"
-mydict = {109: 101, 83: 74, 97: 111, 111: None, 100: None, 110: None, 103: None, 104: None, 116: None}
-print(txt.translate(mydict))
+mydictionary = {109: 101, 83: 74, 97: 111, 111: None, 100: None, 110: None, 103: None, 104: None, 116: None, 33: 34}
+print(txt.translate(mydictionary))
 
 # maketrans()
 # maketrans() method takes 3 parameters:
@@ -236,8 +236,9 @@ print(txt.translate(mydict))
 txt = "Good night Sam!"
 x = "mSa"
 y = "eJo"
-z = "odnght"
-mytable = str.maketrans(x, y, z)
+z = "Godnght"
+mytable = str.maketrans(x, y, z) # z not included, x becomes y
+
 print(txt.translate(mytable))
 
 

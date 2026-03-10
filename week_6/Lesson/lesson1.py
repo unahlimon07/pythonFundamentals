@@ -22,7 +22,7 @@ print('\n\n')
 
 print('\n\n')
 print('-----------------[ [3] with steps]------------------')
-for x in range(0, 10, 2):
+for x in range(0, 10, 3):
     print(x, end=' ')
 
 print('\n\n')
@@ -57,18 +57,13 @@ data = [
     ['eraser','Non-Food', 5, 252, 201],
     ['sharpener','Non-Food', 10, 372, 297]
 ]
-
-
-
-for row in data:
-    print(row)
-
+for row in data: #
+    print(row[2][0])
 
 print('\n\n')
 
-
-for x in range(0, len(data)):
-    print(data[x])
+for x in range(0, len(data)): # index
+    print(data[x][0])
 
 
 
