@@ -3,7 +3,7 @@
 # created outside
 print('-----------------[1]------------------')
 f = open('readmeey.txt', 'w')  #if file exist, recreates file
-f.write("ming ming ming")
+f.write("gkgkgjgjjf")
 f.close()
 
 # created inside week_4_5 folder

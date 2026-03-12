@@ -59,7 +59,7 @@ print('-----------------[5 - replace() ]------------------')
 myStr2 = 'The dogin the neighborhood is my friend.\n'\
          'My neighbor always feed the dog with snaks'
 
-myStr3 = myStr2.replace('dog', 'alligator')
+myStr3 = myStr2.replace(' dog ', ' alligator ')
 print(myStr3)
 
 #[6] split between \n 
@@ -81,7 +81,7 @@ print(myStr2.lower().count('the'))
 # converts the first character of a string to an uppercase letter and all other alphabets to lowercase.
 #capitalizing the beginning of the sentences
 print('-----------------[8 - capitalize() ]------------------')
-myStr3 = 'the doctor was not present yesterday.. i was suppose to have my check up that day'
+myStr3 = '   the doctor was not present yesterday..   i was suppose to have my check up that day'
 
 # split the string at '.' period
 myList = myStr3.split('.')
@@ -153,7 +153,7 @@ for mem in myList:
 
 #[10] endswith()/startswith() method returns True if a string ends with the specified suffix. 
 print('-----------------[10 - endswith()/startswith() ]------------------')
-message = 'Python is fun'
+message = 'Python is fun '
 
 # check if the message ends with fun - returns a boolean
 print(message.endswith('fun'))
@@ -182,7 +182,7 @@ print(title.encode())
 # note, its possible to use .find() to count occurence of a certain substring, using .count() is just better
 print('-----------------[13 - find() ]------------------')
 str3 = 'the dog is a big dog. I like that dog'
-print(str3.find('dog'))
+print(str3.find('dogp'))
 
 
 #[14] index() method returns the index of a substring inside the string (if found).
