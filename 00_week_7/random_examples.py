@@ -51,15 +51,26 @@ print('--------------------[6 Seed random]----------------------------')
 print('\n\n')
 
 # 6. Seed random
-random.seed(42)
-print('seeded random:', random.random())
+# random.seed() controls how random numbers are generated.
+
+# Python doesn’t generate true randomness—it uses a formula (algorithm).
+# The seed is the starting point of that formula.
+
+for x in range(20):
+    print(random.randint(1, 10), end=' ')
+
+print('\n\n')
+random.seed(1)
+for x in range(20):
+    print(random.randint(1, 10), end=' ')
+# 3 10 2 5 2 8 8 8 7 4 2 8 1 7 7 10 1 8 5 4
 pause()
 
 print('\n\n')
 print('--------------------[7 Uniform float]----------------------------')
 print('\n\n')
 
-# 7. Uniform float
+# 7. Uniform float - It generates a random float (decimal number) between two values.
 print('uniform:', random.uniform(1, 10))
 pause()
 

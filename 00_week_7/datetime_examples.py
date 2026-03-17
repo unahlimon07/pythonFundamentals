@@ -18,7 +18,8 @@ print('--------------------[2 Current date]----------------------------')
 print('\n\n')
 
 # 2. Current date
-print('Today:', datetime.date.today())
+cur_date = datetime.date.today()
+print('Today:', cur_date)
 pause()
 
 print('\n\n')

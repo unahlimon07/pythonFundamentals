@@ -15,7 +15,7 @@ async function getTemperature() {
 
     const temp = data.current_weather.temperature;
 
-    document.getElementById("temperature").textContent = temp + "°C";
+    document.getElementById("temperature").textContent = "Temperature of QC fetched from api.open-meteo.com is " + temp + "°C";
   } catch (error) {
     document.getElementById("temperature").textContent = "Error loading temperature";
     console.error(error);

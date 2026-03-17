@@ -1,4 +1,12 @@
 
+def pause():
+    """Pauses the script and waits for user input to continue."""
+    if input('continue? [y/n] ').lower() != 'y':
+        exit()
+
+
+
+
 
 #[1] creating an object and printing its type Sample
 print('-----------------[1]------------------')
@@ -6,10 +14,19 @@ class Sample():
     pass
 my_sample_object = Sample()
 print(type(my_sample_object))
+pause()
+
+
+
+
+
+
+
+
 #[2] Attributes and default values
 print('-----------------[2]------------------')
 class Dog():
-    def __init__(self, mybreed = 'Askal', name = 'Kenshin', color = 'brown'):
+    def __init__(self, mybreed = 'Askal', name = 'Cute', color = 'brown'):
 
         #Attributes
         self.breed = mybreed
@@ -20,6 +37,15 @@ my_dog = Dog(mybreed = 'Labrador')
 print(type(my_dog))
 print(my_dog.breed)
 print(my_dog.name)
+pause()
+
+
+
+
+
+
+
+
 
 #[3] enums class object attribute
 print('-----------------[3]------------------')
@@ -43,6 +69,15 @@ print(my_cat.species)
 print(my_cat.name)
 print(my_cat.breed)
 print(my_cat.gender)
+pause()
+
+
+
+
+
+
+
+
 
 #[4] methods of a class
 print('-----------------[4]------------------')
@@ -63,6 +98,19 @@ print(my_dog2.name)
 print(my_dog2.color)
 my_dog2.bark()
 my_dog2.printInfo()
+pause()
+
+
+
+
+
+
+
+
+
+
+
+
 
 #[5] methods of a class
 print('-----------------[5]------------------')
@@ -79,6 +127,20 @@ class Circle():
 my_circle = Circle(radius = 10)
 num = my_circle.get_circumference()
 print(num)
+pause()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #[6] inheritance and polymorphism, overwriting
 print('-----------------[6]------------------')

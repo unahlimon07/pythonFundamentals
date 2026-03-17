@@ -48,6 +48,10 @@ li a{
     flex-grow:8;
 }
 
+#temperature{
+    font-size: 30px;
+}
+
 /* login card */
 
 
