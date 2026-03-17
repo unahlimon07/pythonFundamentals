@@ -1,0 +1,55 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+
+ul{
+    display: flex;       /* Aligns list items horizontally */
+    list-style-type: none; /* Removes default bullets */
+    padding: 0;          /* Removes default left padding/indentation */
+    margin: 0;           /* Removes default margins */
+    gap: 20px;    
+}
+ul li{
+    padding: 10px;       /* Adds padding inside each list item */
+   
+}
+li a{
+    text-decoration: none; /* Removes underline from links */
+    color: black;          /* Sets link color to black */
+}
+
+.border{
+    border-style:solid;
+    border-width:2px;
+    border-color:red;
+}
+
+.border2{
+    border-style:solid;
+    border-width:2px;
+    border-color:rgb(60, 255, 0);
+}
+
+.container{
+    
+    display: flex;       /* Aligns child elements horizontally */
+    flex-direction:column;
+    min-height:100vh;
+}
+
+.content{
+    flex-grow:8;
+}
+
+/* login card */
+
+
+
+

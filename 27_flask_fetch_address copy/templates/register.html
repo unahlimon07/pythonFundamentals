@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+    <div class="container border">
+        <h1>Register</h1>
+
+        <div class="register-card border">
+            <input type="text" placeholder="Last name">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Age">
+
+            <select id="region-select" onchange="loadProvinces()">
+                
+            </select>
+
+            <select id="province-select" onchange="loadMunicipalities()">
+
+            </select>
+
+            <select id="municipality-select" onchange="loadBarangays()">
+
+            </select>
+
+            <select id="barangay-select">
+
+            </select>
+
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='register.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,2 @@
+putting class border on elements makes you see the space
+an element occupies

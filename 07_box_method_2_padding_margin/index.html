@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- internal js -->
+    <script>
+        function changeText(){
+            var inputValue = document.getElementById("input1").value;
+            document.getElementById("output").innerHTML = inputValue;
+            
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "help.html">help</a></li>
+        </ul>
+    </header>
+    <div>
+        <h1>Hello, World!</h1>
+        <p> this is the page content</p>
+        <input type = "text" id="input1">
+        <button onclick = "changeText()">click me</button>
+
+    </div>
+    <p id = "output"></p>
+    <footer>
+        <p>Copyright 2024</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+
+
+
+ul{
+    display: flex;       /* Aligns list items horizontally */
+    list-style-type: none; /* Removes default bullets */
+    padding: 0;          /* Removes default left padding/indentation */
+    margin: 0;           /* Removes default margins */
+    gap: 20px;    
+}
+
+.border{
+    border-style:solid;
+    border-width:2px;
+    border-color:red;
+}
+
+
+
