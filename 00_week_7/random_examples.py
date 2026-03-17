@@ -57,12 +57,12 @@ print('\n\n')
 # The seed is the starting point of that formula.
 
 for x in range(20):
-    print(random.randint(1, 10), end=' ')
+    print(random.randint(1, 10), end=' ') # no seed - this will generate a different sequence of random numbers every time we run the script
 
 print('\n\n')
 random.seed(1)
 for x in range(20):
-    print(random.randint(1, 10), end=' ')
+    print(random.randint(1, 10), end=' ') # this will generate the same sequence of random numbers every time we run the script because we set the seed to 1
 # 3 10 2 5 2 8 8 8 7 4 2 8 1 7 7 10 1 8 5 4
 pause()
 
@@ -79,7 +79,7 @@ print('--------------------[8 Random choices with weights]----------------------
 print('\n\n')
 
 # 8. Random choices with weights
-print('choices:', random.choices(['a', 'b', 'c'], weights=[10, 1, 1], k=5))
+print('choices:', random.choices(['a', 'b', 'c'], weights=[10, 1, 1], k=5)) # this will generate more 'a' than 'b' and 'c' because of the weights
 pause()
 
 print('\n\n')
@@ -87,7 +87,7 @@ print('--------------------[9 Random range]----------------------------')
 print('\n\n')
 
 # 9. Random range
-print('randrange:', random.randrange(0, 100, 5))
+print('randrange:', random.randrange(0, 100, 5)) # this will generate a random number from 0 to 100 that is divisible by 5
 pause()
 
 print('\n\n')
@@ -95,5 +95,5 @@ print('--------------------[10 Random boolean]----------------------------')
 print('\n\n')
 
 # 10. Random boolean
-print('random boolean:', random.choice([True, False]))
+print('random boolean:', random.choice([True, False])) # this will generate a random boolean value
 pause()
