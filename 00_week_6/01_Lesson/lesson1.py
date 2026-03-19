@@ -22,7 +22,7 @@ print('\n\n')
 
 print('\n\n')
 print('-----------------[ [3] with steps]------------------')
-for x in range(0, 10, 3):
+for x in range(0, 10, 2):
     print(x, end=' ')
 
 print('\n\n')
@@ -39,7 +39,7 @@ for x in num_list2:
 print('\n\n')
 
 for x in range(0, len(num_list2)):
-    print(num_list2[x], end=' ')
+    print(num_list2[2], end=' ')
 
 print('\n\n')
 
@@ -58,12 +58,12 @@ data = [
     ['sharpener','Non-Food', 10, 372, 297]
 ]
 for row in data: #
-    print(row[2][0])
+    print(row)
 
 print('\n\n')
 
 for x in range(0, len(data)): # index
-    print(data[x][0])
+    print(data[x])
 
 
 

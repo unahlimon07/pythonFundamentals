@@ -42,8 +42,8 @@ for mem in new_list:
 
 
 # more more better
-# from collections import Counter
-# new_dictionary = Counter(new_list)
+from collections import Counter
+new_dictionary = Counter(new_list)
 
 
 # SORT 1: Alphabetically

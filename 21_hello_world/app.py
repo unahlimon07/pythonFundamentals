@@ -20,4 +20,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
+# pip install flask
+# py -m pip install flask
+# python -m pip install flask
 

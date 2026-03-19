@@ -127,7 +127,7 @@ print()
 
 
 
-# [12] count()
+# [12] count() - count the number of occurrences of an element in the list
 print('-----------------[12 count()]------------------')
 num_list = [1,1,1,1,2,3,4,5]
 print(num_list)

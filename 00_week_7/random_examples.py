@@ -26,6 +26,7 @@ print('\n\n')
 
 # 3. Random choice
 print('choice:', random.choice(['apple', 'banana', 'cherry']))
+print('choice:', random.choice([['cat', 'dog'], ['bird', 'snake']]))
 pause()
 
 print('\n\n')
@@ -79,7 +80,7 @@ print('--------------------[8 Random choices with weights]----------------------
 print('\n\n')
 
 # 8. Random choices with weights
-print('choices:', random.choices(['a', 'b', 'c'], weights=[10, 1, 1], k=5)) # this will generate more 'a' than 'b' and 'c' because of the weights
+print('choices:', random.choices(['a', 'b', 'c'], weights=[5, 1, 1], k=20)) # this will generate more 'a' than 'b' and 'c' because of the weights
 pause()
 
 print('\n\n')

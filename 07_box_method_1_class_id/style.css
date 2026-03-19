@@ -1,5 +1,9 @@
 
-
+body{
+ 
+    padding:0;
+    margin:0;
+}
 
 
 ul{
@@ -14,6 +18,15 @@ ul{
     border-style:solid;
     border-width:2px;
     border-color:red;
+}
+.border2{
+    border-style:solid;
+    border-width:2px;
+    border-color:rgb(0, 38, 255);
+}
+
+.sample{
+    width:100px;
 }
 
 

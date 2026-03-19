@@ -15,7 +15,7 @@ def help():
 
 @app.route('/about')
 def about():
-    data = [{'name': 'John Doe', 'age': 30, 'city': 'New York'}]
+    data = {'name': 'John Doe', 'age': 30, 'city': 'New York'}
     return render_template('about.html', data=data)
 
 if __name__ == '__main__':
